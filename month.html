@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./resources/styles/reset.css">
+	<link rel="stylesheet" href="./resources/styles/month.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<header>
+	<div class="menu-trigger" id="menu01">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	</div>
+	ONE SUPPORT
+</header>
+<script>
+	jQuery(function(){
+	  $('.menu-trigger').on('click', function() {
+	    $(this).toggleClass('active');
+	     $('.GrobalNav').toggleClass('is_Active');
+	     $('.Main').toggleClass('is_Active');
+	    return false;
+	  });
+	});
+</script>
+
+	<div class="page">
+		<nav class="GrobalNav">
+			<ul class="GrobalNav_List">
+				<li class="GrobalNav_item"><a href="">ダッシュボード</a></li>
+				<li class="GrobalNav_item is_Active"><a href="">売上管理</a></li>
+				<li class="GrobalNav_item"><a href="">メッセージ</a></li>
+				<li class="GrobalNav_item"><a href="">店舗設定</a></li>
+				<li class="GrobalNav_item"><a href="">商品一覧</a></li>
+			</ul>
+		</nav>
+		<main class="Main">
+			<div class="Main_headline">
+				<div class="Main_headline_left">
+					<p>売上管理</p>
+					<div class="date_area">
+						<span>【</span>
+						<span>2020年06月</span>
+						<span>】</span>
+					</div>
+					<div class="date_move_area">
+						<span><a href="">< 前の月：2020年05月</a></span>
+						<span style="padding:0 16px;">|</span>
+						<span><a href="">次の月：2020年07月 > </a></span>
+					</div>
+				</div>
+				<div class="select_date">
+					<div class="select_date_item item_daily"><a href="">日表示</a></div>
+					<div class="select_date_item item_week"><a href="">週表示</a></div>
+					<div class="select_date_item item_month is_Active"><a href="">月表示</a></div>
+				</div>
+			</div>
+
+			<div class="result_group">
+				<div class="result_item">
+					<div class="result_item_head">
+						<span>注文件数</span>
+						<span>(</span>
+						<span>8</span>
+						<span>件)</span>
+					</div>
+					<div class="result_item_content">
+						<span>¥</span>
+						<span>24,000</span>
+					</div>
+				</div>
+
+				<div class="result_item">
+					<div class="result_item_head">
+						<span>注文件数</span>
+						<span>(</span>
+						<span>8</span>
+						<span>件)</span>
+					</div>
+					<div class="result_item_content">
+						<span>¥</span>
+						<span>24,000</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="order_table_group">
+				<p>注文詳細</p>
+				<table>
+				  <tr>
+				    <th>商品名</th>
+				    <th>購入された数</th>
+				    <th>単価</th>
+				    <th>合計金額</th>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				  <tr>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>100</td>
+				    <td>¥1,000</td>
+				    <td>¥100,000</td>
+				  </tr>
+				</table>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

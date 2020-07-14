@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./resources/styles/reset.css">
+	<link rel="stylesheet" href="./resources/styles/order_manage.css">	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<header>
+	<div class="menu-trigger" id="menu01">
+	    <span></span>
+	    <span></span>
+	    <span></span>
+	</div>
+	ONE SUPPORT
+</header>
+<script>
+	jQuery(function(){
+	  $('.menu-trigger').on('click', function() {
+	    $(this).toggleClass('active');
+	     $('.GrobalNav').toggleClass('is_Active');
+	     $('.Main').toggleClass('is_Active');
+	    return false;
+	  });
+	});
+</script>
+
+
+	<div class="page">
+		<nav class="GrobalNav">
+			<ul class="GrobalNav_List">
+				<li class="GrobalNav_item"><a href="">ダッシュボード</a></li>
+				<li class="GrobalNav_item is_Active"><a href="">売上管理</a></li>
+				<li class="GrobalNav_item"><a href="">メッセージ</a></li>
+				<li class="GrobalNav_item"><a href="">店舗設定</a></li>
+				<li class="GrobalNav_item"><a href="">商品一覧</a></li>
+			</ul>
+		</nav>
+		<main class="Main">
+			<div class="Main_headline">
+				<div class="Main_headline_left">
+					<p>注文管理</p>
+				</div>
+			</div>
+			<div class="order_manage_tab_group">
+				<a href="#" class="order_manage_tab_item is_Active">全ての注文</a>
+				<a href="#" class="order_manage_tab_item">準備中</a>
+				<a href="#" class="order_manage_tab_item">受け渡し済</a>
+				<a href="#" class="order_manage_tab_item">キャンセル</a>
+			</div>
+
+			<div class="order_table_group">
+				<table>
+				  <tr>
+				    <th>注文No.</th>
+				    <th>注文時間</th>
+				    <th>ステータス</th>
+				    <th>商品名</th>
+				    <th>オプション</th>
+				    <th>数量</th>
+				    <th>受け取り予定時間</th>
+				  </tr>
+				  <tr>
+				    <td>9</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>8</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>7</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>6</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>5</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>4</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>3</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>2</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				  <tr>
+				    <td>1</td>
+				    <td>2020/06/05 17:55</td>
+				    <td>	
+				    	<select name="item-0-status" id="id_item-0-status">
+							<option value="1">準備中</option>
+							<option value="2">受け渡し済み</option>
+							<option value="3">キャンセル</option>
+						</select>
+					</td>
+				    <td>チョリソーとモッツァレラチーズのなんとか</td>
+				    <td>大盛り,辛さ多め</td>
+				    <td>1</td>
+				    <td>2020/06/05 18:30</td>
+				  </tr>
+				</table>
+			</div>
+		</main>
+	</div>
+<script>
+	$('select[id$=-status][id^=id_item-]').children().each(function (){
+	    if($(this).val() == 0){
+	        $(this).attr('style', 'background-color:white;');
+	    }
+	    if($(this).val() == 1){
+	        $(this).attr('style', 'background-color:#FFDBDB; color:#000;');
+	    }
+	    if($(this).val() == 2){
+	        $(this).attr('style', 'background-color:#FA7D7B; color:#fff;text-indent:20px;');
+	    }
+	    if($(this).val() == 3){
+	       $(this).attr('style', 'background-color:#E3E3E3; color:#000;text-indent:25px;');
+	    }
+	});
+
+	$('select[id$=-status][id^=id_item-]').change(function (){
+	    var style = $(this).find('option:selected').attr('style');
+	    $(this).attr('style', style);
+	}).change();
+</script>
+
+<script>
+	$(function() {
+	    $('.order_manage_tab_item').click(function() {
+	        $('.order_manage_tab_item').removeClass('is_Active');
+	        $(this).addClass('is_Active');
+	    });
+	});
+</script>
+</body>
+</html>
